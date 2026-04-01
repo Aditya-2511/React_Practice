@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
 
-createRoot(document.getElementById('sandy')).render(
+createRoot(document.getElementById('root')).render(
   <p>Welcome!</p>
 )
