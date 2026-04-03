@@ -2,6 +2,22 @@
 <html lang="en">
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      const myVehicle = {
+        brand: 'Ford',
+        model: 'Mustang',
+        color: 'red'
+      }
+
+      const updateMyVehicle = {
+        type: 'car',
+        year: 2021,
+        color: 'yellow'
+      }
+
+      const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+
+      console.log(myUpdatedVehicle);
+    </script>
   </body>
 </html>
