@@ -2,22 +2,16 @@
 <html lang="en">
   <body>
     <div id="root"></div>
+    <p id="demo"></p>
     <script type="module">
-      const myVehicle = {
-        brand: 'Ford',
-        model: 'Mustang',
-        color: 'red'
-      }
+      // import {name, age} from "./person.js";
 
-      const updateMyVehicle = {
-        type: 'car',
-        year: 2021,
-        color: 'yellow'
-      }
+      // document.getElementById("demo").innerHTML = "My name is " + name;
+      // document.getElementById("demo").innerHTML += ", I am " + age + ".";
+    
+      import message from "./message.js"
 
-      const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
-
-      console.log(myUpdatedVehicle);
+      document.getElementById("demo").innerHTML = message();
     </script>
   </body>
 </html>
