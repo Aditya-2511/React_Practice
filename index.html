@@ -4,14 +4,18 @@
     <div id="root"></div>
     <p id="demo"></p>
     <script type="module">
-      // import {name, age} from "./person.js";
+      function renderApp() {
+        document.getElementById("demo").innerHTML = "Welcome!";
+      }
 
-      // document.getElementById("demo").innerHTML = "My name is " + name;
-      // document.getElementById("demo").innerHTML += ", I am " + age + ".";
-    
-      import message from "./message.js"
+      function renderLogin() {
+        document.getElementById("demo").innerHTML = "Please log in";
+      }
 
-      document.getElementById("demo").innerHTML = message();
+      let authenticated = false;
+
+      authenticated ? renderApp() : renderLogin();
+
     </script>
   </body>
 </html>
