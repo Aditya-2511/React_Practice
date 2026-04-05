@@ -1,17 +1,17 @@
 import { createRoot } from 'react-dom/client'
-import { useState } from 'react'
 
-function Counter() {
-  // Destructuring the array returned by useState
-  const [count, setCount] = useState(0);
-  
+function Car() {
+  const brand = "Ford";
+  const model = "Mustang";
+
   return (
-    <button onClick={() => setCount(count + 1)}>
-      Count: {count}
-    </button>
+    <>
+      <h2>My Car</h2>
+      <p>It is a {brand} {model}.</p>
+    </>
   );
 }
 
 createRoot(document.getElementById('root')).render(
-  <Counter />
+  <Car />
 );
