@@ -1,15 +1,15 @@
 import { createRoot } from 'react-dom/client'
 
 function Car() {
-  const myobj = {
-    name: "Fiat",
-    model: "500",
-    color: "white"
+  const mystyles = {
+    color: "red",
+    fontSize: "20px",
+    backgroundColor: "lightyellow",
   };
 
   return (
     <>
-      <h1>My car is a {myobj.color} {myobj.name} {myobj.model}</h1>
+      <h1 style={mystyles}>My car</h1>
     </>
   );
 }
